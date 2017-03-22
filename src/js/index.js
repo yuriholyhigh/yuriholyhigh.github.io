@@ -1,10 +1,10 @@
-/**
- * Created by zhangshaoliang on 2017/3/18.
- */
-
-window.onload = function () {
-    document.getElementById("view-title").onclick = function () {
-        document.getElementById("view-title").style.color = "red";
-        alert("Welcome!");
+var indexView = {
+    init: function () {
+        this.pageName = "index";
+        this.render();
+    },
+    render: function () {
+        window.console.log(this.pageName);
     }
 };
+indexView.init();
